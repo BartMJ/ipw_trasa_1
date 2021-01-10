@@ -46,7 +46,7 @@ body {
 }
 
 #slide1 {
-	background: url('../img/Plac_Unii/[ACC]\ PL\ UNII\ WIDOK\ NA\ POŁUDNIE\ HIGH\ RES\(1\).png') center center no-repeat;
+	background: url('../img/Plac_Unii/[ACC]\ PL\ UNII\ WIDOK\ NA\ POŁUDNIE\ HIGH\ RES.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
