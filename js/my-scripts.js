@@ -58,30 +58,23 @@ function showSlides(n) {
 */
 const slideOneBW = document.querySelector('#slide1')
 const slideOneColor = document.querySelector('#slide1-color')
-const buttonColor = document.querySelector('#my-button')
-const buttonBW = document.querySelector('#my-button-2')
+const button1 = document.querySelector('#btn-bottom-1')
+let isColored = true
 
 
-function colorize(x) {
+function colorize() {
+
+  if(isColored === true) {
   
-  if(x === 2) {
-    console.log(2)
-    // Kolor znika, ciemny aktywny
-    $('#slide1-color').fadeTo(1500, 0)
-
-    buttonBW.style.display = 'none'
-    buttonColor.style.display = 'block'
-  
-  }
-  if(x === 1) {
-    console.log(1)
-    // Kolor sie pojawia
     $('#slide1-color').fadeTo(1500, 1)
-    
-    buttonColor.style.display = 'none'
-    buttonBW.style.display = 'block'
+    button1.children[0].innerText = 'Zdjęcie koloryzowane'
+    isColored = false
 
-   
+  } else {
+    
+    $('#slide1-color').fadeTo(1500, 0)
+    button1.children[0].innerText = 'Zdjęcie czarno-białe'
+    isColored = true
 
   }
   

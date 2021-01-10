@@ -60,19 +60,22 @@
 
             <!-- <button id="my-button" class="color-btns" onclick="colorize(1)">  Koloryzuj zdjęcie  </button> -->
             <div class="" id="slide1-color" data-slide="1"></div>
-            <button id="my-button-2" class="color-btns" onclick="colorize(2)" style="display: none;">  Zdjęcie czarno-białe  </button>
+            <!-- <button id="my-button-2" class="color-btns" onclick="colorize(2)" style="display: none;">  Zdjęcie czarno-białe  </button> -->
         </div>
         <div class="my-slides slide" id="slide1b" data-slide="1" style="display: none;"></div>
         <div class="my-slides slide" id="slide1c" data-slide="1" style="display: none;"></div>
-        
-         <div class="badge badge-pill badge-secondary">
-           <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
-           :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
-         </div>
-         <div id="btn-bttm-2" class="badge badge-pill badge-secondary">
-            <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
-            :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
-          </div>
+        <div id="btn-con">
+
+            <div id="btn-bottom-1" class="badge badge-pill badge-secondary" onclick="colorize()">
+               <a>Zdjęcie czarno-białe</a>
+            </div>
+
+            <div id="btn-bottom-2" class="badge badge-pill badge-secondary">
+               <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
+               :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
+            </div>
+
+        </div>
         <!-- Strzałki i kółka -->
             <div id="arrows-and-dots">
                <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image>

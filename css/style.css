@@ -52,14 +52,14 @@ body {
 	min-height: 100vh;
 	display: fixed;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	top: 0;
 	z-index: -10;
 	
 	
 }
 #slide1-color {
-	background: url('../img/Plac_Unii/[ACC]\ PL\ UNII\ WIDOK\ NA\ POŁUDNIE\ HIGH\ RES.png') center center no-repeat;
+	background: url('../img/Plac_Unii/[ACC]\ PL\ UNII\ WIDOK\ NA\ POŁUDNIE\ HIGH\ RES\ BW.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
@@ -357,13 +357,29 @@ body {
 }
 
 /* Przycisk Lokalizacja link */
-#btn-bttm-2 {
-	
-}
-   .badge-pill {
+ #btn-con {
 	position: absolute;
+	z-index: 100;
 	bottom: 28px;
-	left: 24%;
+	left: 14%;
+} 
+#btn-bottom-1 {
+	/* bottom: 28px;
+	left: 14%; */
+	display: inline;
+}
+
+#btn-bottom-2 {
+	/* bottom: 28px;
+	left: 24%; */
+	display: inline;
+	margin: 0 0 0 1vw;
+}
+
+.badge-pill {
+	
+	/* bottom: 28px;
+	left: 24%; */
 	padding-right: 0.6em;
 	padding-left: 0.6em;
 	border-radius: 10rem;
