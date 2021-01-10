@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> Trasa Plac Unii-Iwiczna </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<!-- Warning that the website works not on phones -->
+<div class="phone-warning">
+   <h1">Przepraszamy, strona aktualnie niedostępna na urządzenia mobilne.</h1>
+</div>
+<div id="main"><!-- main Start -->
+<!--
+<nav class="navbar bg-dark justify-content-end">
+    <ul class="nav justify-content-center">
+        <?php/*
+            if(isset($_SESSION['useruid'])) {
+                echo "<li class='nav-item-plac'><a class='nav-link btn-secondary' href='include/logout.inc.php'> Log out </a></li>";
+            }
+        */?>
+    </ul>
+</nav>
+-->
+   <div id="nav-background">    
+       <div class="navigation">
+            <!-- Logo -->
+            <div id="logo">
+               <img src="./img/IPW_logo.gif" alt="">
+            </div>
+            <!-- Nawigacja -->
+            <ul>
+               <li id="square" data-slide="1">PLAC UNII LUBELSKIEJ</li>
+               <li data-slide="2">ULICA CHOCIMSKA</li>
+               <li data-slide="3">PARK MORSKIE OKO</li>
+               <li data-slide="4">PAŁAC SZUSTRA</li>
+               <li data-slide="5">PARK PROMENADA</li>
+               <li data-slide="6">ULICA KONSTRUKTORSKA</li>
+               <li data-slide="7">ULICA DOLNA</li>
+               <li data-slide="8">KLUB SPORTOWY WARSZAWIANKA</li>
+               <li data-slide="9">PARK ARKADIA</li>
+               <li data-slide="10">KRÓLIKARNIA</li>
+               <li data-slide="11">SKOCZNIA NARCIARSKA “SKARPA”</li>
+            </ul>
+        </div>
+   </div>
+
+     <!-- Plac Unii -->
+     <section>
+        <div class="fade-animation my-slides">
+            <div class="active" id="slide1" data-slide="1">
+               <!-- <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image> -->
+            </div>
+
+            <!-- <button id="my-button" class="color-btns" onclick="colorize(1)">  Koloryzuj zdjęcie  </button> -->
+            <div class="" id="slide1-color" data-slide="1"></div>
+            <button id="my-button-2" class="color-btns" onclick="colorize(2)" style="display: none;">  Zdjęcie czarno-białe  </button>
+        </div>
+        <div class="my-slides slide" id="slide1b" data-slide="1" style="display: none;"></div>
+        <div class="my-slides slide" id="slide1c" data-slide="1" style="display: none;"></div>
+        
+         <div class="badge badge-pill badge-secondary">
+           <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
+           :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
+         </div>
+         <div id="btn-bttm-2" class="badge badge-pill badge-secondary">
+            <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
+            :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
+          </div>
+        <!-- Strzałki i kółka -->
+            <div id="arrows-and-dots">
+               <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image>
+                  <div id="dot-1" class="dot active"></div>
+                  <div id="dot-2" class="dot"></div>
+                  <div id="dot-3" class="dot"></div>
+               <image class="fa-angle-right" onclick="toggleSlides(1)" src='./img/arrow right black.png' width="14px"></image>
+            </div>
+     </section>
+     <!-- Chocimska -->
+     <section>
+        <div class="fade-animation">
+            <div id="slide2" class="slide block" data-slide="2" onclick="colorize(1)" ></div>
+            <div id="slide2b" class="block" onclick="colorize(2)"></div>
+        </div>
+     </section>
+     <section class="slide" id="slide3" data-slide="3">
+        <div class="wrapper"><!-- wrapper start -->
+           <div id="text-three" class="text"><!-- text start -->
+              <div class="text-inner"> Pl. Unii 1958-65 </div>
+              <hr>
+              <div class="text-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+              </div>
+        </div><!-- wrapper end -->
+        <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+     </section>
+     <section class="slide" id="slide4" data-slide="4">
+      <div class="wrapper"><!-- wrapper start -->
+         <div id="text-three" class="text"><!-- text start -->
+            <div class="text-inner"> Pl. Unii 1958-65 </div>
+            <hr>
+            <div class="text-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+            </div>
+      </div><!-- wrapper end -->
+      <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+     </section>
+
+     <section class="slide" id="slide5" data-slide="5">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+     </section>
+
+      <section class="slide" id="slide6" data-slide="6">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+      </section>
+
+      <section class="slide" id="slide7" data-slide="7">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+      </section>
+
+      <section class="slide" id="slide8" data-slide="8">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+      </section>
+      
+      <section class="slide" id="slide9" data-slide="9">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+      </section>
+
+      <section class="slide" id="slide10" data-slide="10">
+         <div class="wrapper"><!-- wrapper start -->
+            <div id="text-three" class="text"><!-- text start -->
+               <div class="text-inner"> Pl. Unii 1958-65 </div>
+               <hr>
+               <div class="text-desc">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora ea commodi maxime nostrum quasi nihil iste.
+               </div>
+         </div><!-- wrapper end -->
+         <!-- <a class="button" data-slide="2" title="">Bbbbb</a> -->
+      </section>
+
+      <section>
+         <div class="slide" id="slide11" data-slide="11"></div>
+         <!-- Strzałki i kółka -->
+         <div id="arrows-and-dots-11">
+             <image class="fa-angle-left" onclick="{console.log('hello')}" src='./img/arrow left black.png' width="14px"></image>
+                <div id="dot-1" class="dot active"></div>
+                <div id="dot-2" class="dot"></div>
+                <div id="dot-3" class="dot"></div>
+             <image class="fa-angle-right" onclick="{console.log('hello')}" src='./img/arrow right black.png' width="14px"></image>
+         </div>
+      </section>
+
+     <footer class="page-footer nav-item-plac">
+ 
+        <!-- Copyright -->
+        <div class="text-center">© 2020 Copyright:
+        <a href="http://microwebsites.pl"> microwebsites.pl</a> <!-- https://mdbootstrap.com/ -->
+        </div>
+        <!-- Copyright -->
+ 
+     </footer>
+<!-- Footer -->
+</div> <!-- main End -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./lib/jquery.waypoints.js"></script>
+<script src="js/script.js"></script>
+<script src="js/my-scripts.js"></script>
+<script src="js/cycle.js"></script>
+</body>
+</html>
+
+
+<!-- Pasek na dole - menu --> 
+<!-- Panel sterowania --> 
+<!-- Logo na środku --> 
