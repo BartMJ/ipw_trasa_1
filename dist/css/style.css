@@ -52,7 +52,7 @@ body {
 	min-height: 100vh;
 	display: fixed;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	top: 0;
 	z-index: -10;
 	
