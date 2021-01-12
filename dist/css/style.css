@@ -195,7 +195,8 @@ body {
 .navigation {
 	position: fixed;
 	z-index: 1;
-	background-color: rgb(255, 255, 255, 0.75); /* 0.35 */
+	background-color: rgb(255, 255, 255, 0.75);
+	visibility: visible;
 	height: 100%;
 	right: 0;
 	text-align: left;
@@ -220,8 +221,7 @@ body {
 	line-height: 18px;
 	font-weight: 500;
 	text-align:left;
-	width: 274
-	px;
+	width: 278px;
 	cursor:pointer;
 	transition: all .2s ease-in-out;
 	font-size: 16px;
@@ -268,7 +268,7 @@ body {
 	  display: flex;
 	  justify-content: center;
 	  position: absolute;
-	  bottom: -18px;
+	  bottom: -22px;
 	  width: 100vw;
 	  background-color: rgba(227, 227, 227, 0.42);
       padding: 3em;
@@ -308,15 +308,15 @@ body {
 */
   .dot {
 	  display: inline-block;
-	  width: 9px;
-	  height: 9px;
+	  width: 12px;
+	  height: 12px;
 	  border-radius: 25px;
 	  border: 1px solid rgb(82, 82, 82);
 	  margin: 2px;
   }
 
   .dot.active {
-	background-color: rgb(255, 255, 255, 0.60);
+	background-color: rgba(255, 255, 255, 0.42);
   }
 
   .outer-wrapper:hover {
@@ -342,19 +342,41 @@ body {
 
 }*/
 
+/* Badges *//* Badges *//* Badges *//* Badges */
 .badge {
 	display: inline-block;
-	padding: 0.25em 0.4em;
-	font-size: 75%;
+	padding: 0 0.4em;
+	font-size: 12px;
 	font-weight: 500;
-	line-height: 1;
+	line-height: 1em;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
 	border-radius: 0.25rem;
-	/*transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	z-index: 200;*/
 }
+.badge-pill {
+		
+	/* bottom: 28px;
+	left: 24%; */
+	padding-right: 0.6em;
+	padding-left: 0.6em;
+	border-radius: 10rem;
+	z-index: 200;
+}
+.badge-secondary {
+	background-color: rgba(255, 255, 255, 0.42);
+	border: 1px solid rgb(58, 58, 58);
+	z-index: 200;
+}
+.badge a {
+	text-decoration: none;
+	color: rgb(68, 68, 68);
+}
+/* Badges *//* Badges *//* Badges *//* Badges */
+
+
+
+
 
 /* Przycisk Lokalizacja link */
  #btn-con {
@@ -375,27 +397,6 @@ body {
 	display: inline;
 	margin: 0 0 0 1vw;
 }
-
-.badge-pill {
-	
-	/* bottom: 28px;
-	left: 24%; */
-	padding-right: 0.6em;
-	padding-left: 0.6em;
-	border-radius: 10rem;
-	z-index: 200;
-  }
-
-  .badge-secondary {
-	background-color: rgba(255, 255, 255, 0.42);
-	border: 1px solid rgb(58, 58, 58);
-	z-index: 200;
-  }
-
-  .badge a {
-	text-decoration: none;
-	color: rgb(68, 68, 68);
-  }
   /* #bottom-menu {
 	  height: 20em;
 	  background-color:orange;
