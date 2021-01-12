@@ -66,13 +66,13 @@ function colorize() {
 
   if(isColored === true) {
   
-    $('#slide1-color').fadeTo(1500, 1)
+    $('#slide1-color').fadeTo(850, 1)
     button1.children[0].innerText = 'Zdjęcie koloryzowane'
     isColored = false
 
   } else {
     
-    $('#slide1-color').fadeTo(1500, 0)
+    $('#slide1-color').fadeTo(850, 0)
     button1.children[0].innerText = 'Zdjęcie czarno-białe'
     isColored = true
 
@@ -85,4 +85,47 @@ function colorize() {
 
 function myFunction() {
   alert("huj")
+}
+
+
+
+
+/* Fading Info *//* Fading Info *//* Fading Info *//* Fading Info */
+const info = document.getElementById('btn-bottom-3')
+const hiddenP = document.getElementById('hidden-info')
+
+info.addEventListener('mouseenter', unfade)
+info.addEventListener('mouseleave', fade)
+
+function unfade() {
+  
+    var op = 0.1;  // initial opacity
+    hiddenP.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        hiddenP.style.opacity = op;
+        hiddenP.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 20);
+}
+
+function fade() {
+
+  var op = 1;  // initial opacity
+  var timer = setInterval(function () {
+      if (op <= 0.1){
+          clearInterval(timer);
+          hiddenP.style.display = 'none';
+      }
+      hiddenP.style.opacity = op;
+      hiddenP.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op -= op * 0.1;
+  }, 10);
+}
+
+function hideButton() {
+  document.querySelector('#btn-bottom-4').style.display = 'none'
+  document.querySelector('#btn-con').style.left = '8vw'
 }
