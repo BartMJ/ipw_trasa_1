@@ -140,15 +140,17 @@ window.onscroll = function() {
 
 var currentScrollPos = window.pageYOffset;
 
-var customScrollPos = window.innerHeight / 2; /** (window.innerHeight / 4)*3; */
+var customScrollPos = window.innerHeight / 2; 
 
 console.log(prevScrollpos)
 console.log(currentScrollPos)
   if (prevScrollpos < customScrollPos) {
     document.querySelector(".bttm-menu-con").style.bottom = "0";
+
   } else {
     
     document.querySelector(".bttm-menu-con").style.bottom = "-114px";
+
   }
   prevScrollpos = currentScrollPos;
 }
