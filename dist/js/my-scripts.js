@@ -129,3 +129,28 @@ function hideButton() {
   document.querySelector('#btn-bottom-4').style.display = 'none'
   document.querySelector('#btn-con').style.left = '8vw'
 }
+
+/** Znikanie menu przy przesuwaniu */
+
+var prevScrollpos = window.pageYOffset;
+
+
+window.onscroll = function() {
+
+
+var currentScrollPos = window.pageYOffset;
+
+var customScrollPos = window.innerHeight / 2; 
+
+console.log(prevScrollpos)
+console.log(currentScrollPos)
+  if (prevScrollpos < customScrollPos) {
+    document.querySelector(".bttm-menu-con").style.bottom = "0";
+
+  } else {
+    
+    document.querySelector(".bttm-menu-con").style.bottom = "-114px";
+
+  }
+  prevScrollpos = currentScrollPos;
+}

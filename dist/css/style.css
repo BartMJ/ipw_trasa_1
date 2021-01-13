@@ -54,7 +54,7 @@ body {
 	position: absolute;
 	width: 100%;
 	top: 0;
-	z-index: -10;
+	z-index: -1;
 	
 	
 }
@@ -73,6 +73,7 @@ body {
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
 	display: fixed;
+	
 }
 #slide1c {
 	background: url('../img/Plac_Unii/[ACC] PL UNII HIGH RES NATURAL BW.png') center center no-repeat;
@@ -80,6 +81,7 @@ body {
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
 	display: fixed;
+	
 }
 
 #slide2 {
@@ -89,6 +91,7 @@ body {
 	min-height: 100vh;
 	min-width: 100%;
 	position: absolute;
+	z-index: 2;
 }
 
 #slide2b {
@@ -194,7 +197,7 @@ body {
 
 .navigation {
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	background-color: rgb(255, 255, 255, 0.75);
 	visibility: visible;
 	height: 100%;
@@ -250,7 +253,7 @@ body {
 	width: 60%;
 	margin: auto;
 }
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
 
 	.navigation li{
 		font-size: 12px;
@@ -262,29 +265,8 @@ body {
 	.navigation li{
 		font-size: 10px;
 	}
-  }
+  } */
   /* Arrows and dots */
-  #arrows-and-dots {
-	  display: flex;
-	  justify-content: center;
-	  position: absolute;
-	  bottom: -23px;
-	  width: 100vw;
-	  background-color: rgba(227, 227, 227, 0.42);
-      padding: 3em;
-  }
-
-
-
-  
-
-  #arrows-and-dots-11 {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	bottom: 7vh;
-	height: 0;
-}
 
   .fa-angle-left {
 	  height: 16px;
@@ -344,16 +326,19 @@ body {
 
 /* Badges *//* Badges *//* Badges *//* Badges */
 .badge {
-	display: inline-block;
-	padding: 0 0.4em;
+	display: block;
+	padding: 2px;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1em;
 	text-align: center;
 	white-space: nowrap;
-	vertical-align: baseline;
+	/* vertical-align: baseline; */
 	border-radius: 0.25rem;
 	cursor: pointer;
+	width: 112px;
+	margin: 4px 6px 0 6px;
+	
 }
 .badge-pill {
 		
@@ -362,34 +347,18 @@ body {
 	padding-right: 0.6em;
 	padding-left: 0.6em;
 	border-radius: 10rem;
-	z-index: 200;
+	
 }
 .badge-secondary {
 	background-color: rgba(255, 255, 255, 0.42);
 	border: 1px solid rgb(58, 58, 58);
-	z-index: 200;
+	
 }
 .badge a {
 	text-decoration: none;
 	color: rgb(68, 68, 68);
 }
 /* Badges *//* Badges *//* Badges *//* Badges */
-
-
-
-
-
-/* Przycisk Lokalizacja link */
-#btn-con {
-	position: absolute;
-	z-index: 100;
-	bottom: 28px;
-	left: 4%;
-} 
-#btn-con .badge {
-	display: inline;
-	margin: 0 0 0 1vw;
-}
 
 
 #hidden-info {
@@ -426,3 +395,41 @@ body {
 .dot.active {
   background-color: rgb(255, 255, 255, 0.60);
 } */
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+  }
+
+.item-a {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+}	
+/* Przycisk Lokalizacja link */
+
+#badge-con {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} 
+.item-b {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#arrows-and-dots {
+	display: flex;
+	justify-content: center;
+	padding: 3em 0 3em 0;
+	position: relative;
+	bottom: -2px;
+}
+.bttm-menu-con {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(227, 227, 227, 0.42);
+	transition: bottom 750ms ease-in-out;
+}
