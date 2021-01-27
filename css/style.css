@@ -85,7 +85,7 @@ body {
 }
 
 #slide2 {
-	background: url('../img/Chocimska.jpg') center center no-repeat;
+	background: url('../img/Chocimska/CHOCIMSKA\ MLEKO\ KOLOR.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
@@ -108,7 +108,7 @@ body {
 }
 
 #slide4 {
-	background: url('../img/plac_unii_lata_30.jpg') center center no-repeat;
+	background: url('../img/Pałac\ Szustra/SZUSTRA KOLOR.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
