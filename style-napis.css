@@ -1,0 +1,15 @@
+
+
+
+.letter {
+    display: inline;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.container {
+    padding: 12em 0 0 0;
+    text-align: center;
+}
