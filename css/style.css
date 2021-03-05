@@ -433,3 +433,10 @@ body {
 	background-color: rgba(227, 227, 227, 0.42);
 	transition: bottom 750ms ease-in-out;
 }
+#mapka {
+	position: relative;
+	
+}
+.upper-menu {
+	display: none;
+}
