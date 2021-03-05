@@ -31,7 +31,6 @@ $(document).ready(function() {
         console.log('Hello');
         $('.navigation li[data-slide="1"]').addClass('active')
         $('.navigation li[data-slide="2"]').removeClass('active')
-        
         },
         offset: '-25%'
     })  

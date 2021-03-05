@@ -135,22 +135,22 @@ function hideButton() {
 var prevScrollpos = window.pageYOffset;
 
 
-window.onscroll = function() {
+// window.onscroll = function() {
 
 
-var currentScrollPos = window.pageYOffset;
+// var currentScrollPos = window.pageYOffset;
 
-var customScrollPos = window.innerHeight / 2; 
+// var customScrollPos = window.innerHeight / 2; 
 
-console.log(prevScrollpos)
-console.log(currentScrollPos)
-  if (prevScrollpos < customScrollPos) {
-    document.querySelector(".bttm-menu-con").style.bottom = "0";
+// console.log(prevScrollpos)
+// console.log(currentScrollPos)
+//   if (prevScrollpos < customScrollPos) {
+//     document.querySelector(".bttm-menu-con").style.bottom = "0";
 
-  } else {
+//   } else {
     
-    document.querySelector(".bttm-menu-con").style.bottom = "-114px";
+//     document.querySelector(".bttm-menu-con").style.bottom = "-114px";
 
-  }
-  prevScrollpos = currentScrollPos;
-}
+//   }
+//   prevScrollpos = currentScrollPos;
+// }

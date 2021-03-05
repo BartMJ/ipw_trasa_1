@@ -10,11 +10,28 @@
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <script>
+      document.getElementsByTagName("iframe").src = "https://www.openstreetmap.org/export/embed.html?bbox=21.016132235527042%2C52.21076239459632%2C21.02321326732636%2C52.213766696368644&amp;layer=mapnik";
+       
+    </script>
 </head>
 <body>
 <!-- Warning that the website works not on phones -->
 <div class="phone-warning">
    <h1">Przepraszamy, strona aktualnie niedostępna na urządzenia mobilne.</h1>
+</div>
+<div class="container bttm-menu-con">
+
+            <!-- Strzałki i kółka -->
+            <div id="arrows-and-dots" class="item-b ">
+               <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image>
+                  <div id="dot-1" class="dot active"></div>
+                  <div id="dot-2" class="dot"></div>
+                  <div id="dot-3" class="dot"></div>
+               <image class="fa-angle-right" onclick="toggleSlides(1)" src='./img/arrow right black.png' width="14px"></image>
+            </div>
+</div>
+
 </div>
 <div id="main"><!-- main Start -->
 <!--
@@ -29,10 +46,12 @@
 </nav>
 -->
    <div id="nav-background">    
+
        <div class="navigation">
             <!-- Logo -->
             <div id="logo">
-               <img src="./img/IPW_logo.gif" alt="">
+               <img id="figury" src="./img/IPW_logo_figury.png" alt="">
+               <h1 id="animated-header"></h1>
             </div>
             <!-- Nawigacja -->
             <ul>
@@ -63,7 +82,7 @@
             <!-- <button id="my-button-2" class="color-btns" onclick="colorize(2)" style="display: none;">  Zdjęcie czarno-białe  </button> -->
         </div>
         <div class="my-slides slide" id="slide1b" data-slide="1" style="display: none;"></div>
-        <div class="my-slides slide" id="slide1c" data-slide="1" style="display: none;"></div>
+        <!-- <div class="my-slides slide" id="slide1c" data-slide="1" style="display: none;"></div> -->
 
         <div id="hidden-info">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -71,34 +90,31 @@
               similique sit ex ad accusamus reiciendis odit, 
               necessitatibus ipsa repellendus laborum aliquam? Accusamus, et?</p>
         </div>
-        <div class="container bttm-menu-con">
-
-            <!-- Buttony budge :) -->
-            <div id="badge-con" class="item-a ">
-                  <div id="btn-bottom-3" class="badge badge-pill badge-secondary">
-                     <a>Informacja</a>
-                  </div>
-                  <div id="btn-bottom-4" class="badge badge-pill badge-secondary" onclick="hideButton()">
-                     <a>Znikający przycisk</a>
-                  </div>
-                  <div id="btn-bottom-1" class="badge badge-pill badge-secondary" onclick="colorize()">
-                     <a>Zdjęcie czarno-białe</a>
-                  </div>
-                  <div id="btn-bottom-2" class="badge badge-pill badge-secondary">
-                     <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
-                     :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
-                  </div>
-            </div>
-
-            <!-- Strzałki i kółka -->
-               <div id="arrows-and-dots" class="item-b ">
-                  <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image>
-                     <div id="dot-1" class="dot active"></div>
-                     <div id="dot-2" class="dot"></div>
-                     <div id="dot-3" class="dot"></div>
-                  <image class="fa-angle-right" onclick="toggleSlides(1)" src='./img/arrow right black.png' width="14px"></image>
-               </div>
+        <div id="mapka">
+            <iframe idth="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=21.016132235527042%2C52.21076239459632%2C21.02321326732636%2C52.213766696368644
+            &amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
+            <a target="blank" href="https://www.openstreetmap.org/#map=18/52.21226/21.01967">Wyświetl większą mapę</a>
         </div>
+
+
+         <div class="container upper-menu">
+           
+            <div id="badge-con" class="item-a ">
+               <div id="btn-bottom-3" class="badge badge-pill badge-secondary">
+                  <a>Informacja</a>
+               </div>
+         
+               <div id="btn-bottom-1" class="badge badge-pill badge-secondary" onclick="colorize()">
+                  <a>Zdjęcie czarno-białe</a>
+               </div>
+               <!-- <div id="btn-bottom-2" class="badge badge-pill badge-secondary">
+                  <a href="https://www.google.com/maps/place/Plac+Unii+Lubelskiej/@52.213371,21.0208308,18z/data=!4m5!3m4!1s0x471ecce0aa6b5847
+                  :0x111288023fb22554!8m2!3d52.2133151!4d21.0210577">Lokalizacja miejsca</a>
+               </div> -->
+         </div>
+
+        
 
      </section>
      <!-- Chocimska -->
@@ -206,20 +222,14 @@
       <section>
          <div class="slide" id="slide11" data-slide="11"></div>
          <!-- Strzałki i kółka -->
-         <div id="arrows-and-dots-11">
-             <image class="fa-angle-left" onclick="{console.log('hello')}" src='./img/arrow left black.png' width="14px"></image>
-                <div id="dot-1" class="dot active"></div>
-                <div id="dot-2" class="dot"></div>
-                <div id="dot-3" class="dot"></div>
-             <image class="fa-angle-right" onclick="{console.log('hello')}" src='./img/arrow right black.png' width="14px"></image>
-         </div>
+
       </section>
 
      <footer class="page-footer nav-item-plac">
  
         <!-- Copyright -->
-        <div class="text-center">© 2020 Copyright:
-        <a href="http://microwebsites.pl"> microwebsites.pl</a> <!-- https://mdbootstrap.com/ -->
+        <div style="background-color: gray; height: 18px" class="text-center">© 2020 Copyright:
+        <a  href="http://microwebsites.pl"> microwebsites.pl</a> <!-- https://mdbootstrap.com/ -->
         </div>
         <!-- Copyright -->
  

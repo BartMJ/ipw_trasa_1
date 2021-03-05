@@ -1,4 +1,25 @@
 
+function saySmthSlowly(string) {
+    let przestrzen = document.createElement("br");
+    for(let i = 0; i < string.length; i ++) {
+        setTimeout(() => {
+            document.getElementById('animated-header').append(string[i])
+        }, i * 50)
+    }
+    document.getElementById('animated-header').append(przestrzen)
+}
+setTimeout(() => {
+    saySmthSlowly("Interaktywny ");
+}, 1000)
+setTimeout(() => {
+    saySmthSlowly("Przewodnik ");
+}, 2000)
+setTimeout(() => {
+    saySmthSlowly("Warszawski");
+}, 3000)
+
+
+
 $(document).ready(function() {
 
     

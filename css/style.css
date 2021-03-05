@@ -85,7 +85,7 @@ body {
 }
 
 #slide2 {
-	background: url('../img/Chocimska/CHOCIMSKA\ MLEKO\ KOLOR.png') center center no-repeat;
+	background: url('../img/Chocimska/[ACC]\ HIGIENA\ CHOCIMSKA\ koloryzowane.jpg') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
@@ -95,7 +95,7 @@ body {
 }
 
 #slide2b {
-	background: url('../img/Plac_Unii/PL\ UNII\ KOLOR.png') center center no-repeat;
+	background: url('../img/Chocimska/CHOCIMSKA\ MLEKO\ KOLOR.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
@@ -108,7 +108,7 @@ body {
 }
 
 #slide4 {
-	background: url('../img/Pałac\ Szustra/SZUSTRA KOLOR.png') center center no-repeat;
+	background: url('../img/Pałac\ Szustra/SZUSTRA KOLOR(1).png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
@@ -244,14 +244,19 @@ body {
 	color: rgba(72, 72, 72, 0.52);
 	
 }
-#logo {
-	display: flex;
-	justify-self: center;
+
+#logo h1 {
+	z-index: 999;
+	font-size: 22px;
+	position: absolute;
+	top: 1em;
+	left: 4.5em;
 }
 #logo img {
-	padding: 2em 0 0 0;
-	width: 60%;
-	margin: auto;
+	position: absolute;
+	left: 3.5em;
+	top: 2.5em;
+	height: 80px;
 }
 /* @media (max-width: 1100px) {
 
@@ -328,7 +333,7 @@ body {
 .badge {
 	display: block;
 	padding: 2px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 1em;
 	text-align: center;
@@ -336,9 +341,8 @@ body {
 	/* vertical-align: baseline; */
 	border-radius: 0.25rem;
 	cursor: pointer;
-	width: 112px;
+	width: 134px;
 	margin: 4px 6px 0 6px;
-	
 }
 .badge-pill {
 		
@@ -350,13 +354,13 @@ body {
 	
 }
 .badge-secondary {
-	background-color: rgba(255, 255, 255, 0.42);
+	z-index: 999;
+	color: black;
+	background-color: white;
 	border: 1px solid rgb(58, 58, 58);
-	
 }
 .badge a {
 	text-decoration: none;
-	color: rgb(68, 68, 68);
 }
 /* Badges *//* Badges *//* Badges *//* Badges */
 
@@ -365,7 +369,7 @@ body {
 	opacity: 0;
 	position: absolute;
 	bottom: 150px;
-	left: 4vw;
+	left: 1em;
 	width: 420px;
 	text-align: justify;
 	z-index: 999;
@@ -413,13 +417,13 @@ body {
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 } 
 .item-b {
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
 #arrows-and-dots {
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	padding: 3em 0 3em 0;
@@ -427,16 +431,36 @@ body {
 	bottom: -2px;
 }
 .bttm-menu-con {
-	position: absolute;
-	bottom: 0;
+	z-index: 999;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	background-color: rgba(227, 227, 227, 0.42);
-	transition: bottom 750ms ease-in-out;
+	/* background-color: rgba(255, 255, 255, 0.42); */
+	/* transition: bottom 750ms ease-in-out; */
 }
-#mapka {
-	position: relative;
-	
-}
+
 .upper-menu {
-	display: none;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(255, 255, 255, 0.35); 
+	height: 100px;
+	opacity: 0.5;
+	display: flex;
+	width: 100%;
+	left: 0px;
+}
+
+#mapka {
+	z-index: 700;
+	position: fixed;
+	top: 18em;
+	left: 1em;
+}
+#mapka a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	opacity: 0.8;
+	width: 100%;
+	display: block;
 }
