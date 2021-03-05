@@ -1,6 +1,18 @@
+const mapBurger = document.getElementById('open-map');
+let menuOpen = false;
 
-// const mySpan = document.querySelector('#myspan')
-// mySpan.addEventListener('click', myFunction)
+function toggleNav() {
+  if(!menuOpen) {
+    document.getElementById("mapka").style.left = "1em";
+    mapBurger.innerHTML = "&times; "
+    menuOpen = true
+  } else {
+    document.getElementById("mapka").style.left = "-296px";
+    mapBurger.innerHTML = "&#9776; Mapa"
+    menuOpen = false;
+  }
+
+}
 
 
 
@@ -8,7 +20,6 @@
 
 // Slide is set initialy to 1
 let slideIndex = 1;
-
 
 // Calls functions below but with arrows, not the icon click
 document.addEventListener('keydown', (e) => {

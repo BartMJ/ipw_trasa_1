@@ -246,17 +246,17 @@ body {
 }
 
 #logo h1 {
-	z-index: 999;
+	z-index: 800;
 	font-size: 22px;
 	position: absolute;
 	top: 1em;
-	left: 4.5em;
+	left: 4.2em;
 }
 #logo img {
 	position: absolute;
-	left: 3.5em;
-	top: 2.5em;
-	height: 80px;
+	left: 4.2em;
+	top: 2.96em;
+	height: 60px;
 }
 /* @media (max-width: 1100px) {
 
@@ -354,7 +354,7 @@ body {
 	
 }
 .badge-secondary {
-	z-index: 999;
+	z-index: 800;
 	color: black;
 	background-color: white;
 	border: 1px solid rgb(58, 58, 58);
@@ -372,7 +372,7 @@ body {
 	left: 1em;
 	width: 420px;
 	text-align: justify;
-	z-index: 999;
+	z-index: 800;
 	background-color: rgb(255, 255, 255, 0.75);
 	color: black;
 	padding: 1em;
@@ -431,7 +431,7 @@ body {
 	bottom: -2px;
 }
 .bttm-menu-con {
-	z-index: 999;
+	z-index: 800;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -454,8 +454,14 @@ body {
 	z-index: 700;
 	position: fixed;
 	top: 18em;
-	left: 1em;
+	left: -15%;
+	transition: 0.3s;
 }
+
+#mapka iframe {
+	width: 280px;
+}
+
 #mapka a {
 	text-decoration: none;
 	color: black;
@@ -464,3 +470,10 @@ body {
 	width: 100%;
 	display: block;
 }
+#open-map {
+	position: fixed;
+	top: 8em;
+	left: 1em;
+	z-index: 999;
+	color: whitesmoke;
+} 

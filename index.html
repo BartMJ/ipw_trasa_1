@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <script>
       document.getElementsByTagName("iframe").src = "https://www.openstreetmap.org/export/embed.html?bbox=21.016132235527042%2C52.21076239459632%2C21.02321326732636%2C52.213766696368644&amp;layer=mapnik";
-       
     </script>
 </head>
 <body>
@@ -27,7 +26,6 @@
                <image class="fa-angle-left" onclick="toggleSlides(-1)" src='./img/arrow left black.png' width="14px"></image>
                   <div id="dot-1" class="dot active"></div>
                   <div id="dot-2" class="dot"></div>
-                  <div id="dot-3" class="dot"></div>
                <image class="fa-angle-right" onclick="toggleSlides(1)" src='./img/arrow right black.png' width="14px"></image>
             </div>
 </div>
@@ -91,11 +89,16 @@
               necessitatibus ipsa repellendus laborum aliquam? Accusamus, et?</p>
         </div>
         <div id="mapka">
-            <iframe idth="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+            
+            <iframe height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
             src="https://www.openstreetmap.org/export/embed.html?bbox=21.016132235527042%2C52.21076239459632%2C21.02321326732636%2C52.213766696368644
             &amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
+            
             <a target="blank" href="https://www.openstreetmap.org/#map=18/52.21226/21.01967">Wyświetl większą mapę</a>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
         </div>
+        
+        <span id="open-map" style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776; Mapa</span>
 
 
          <div class="container upper-menu">
@@ -249,3 +252,12 @@
 <!-- Pasek na dole - menu --> 
 <!-- Panel sterowania --> 
 <!-- Logo na środku --> 
+
+<!-- 
+-na górze podpis co widać ???
+-na dole bez kropek strzałki
+-mapa być może chowana 
+-ładnie zrobić logo
+-
+
+--->
