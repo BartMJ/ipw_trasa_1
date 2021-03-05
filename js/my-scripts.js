@@ -1,11 +1,16 @@
 const mapBurger = document.getElementById('open-map');
 let menuOpen = false;
+const iframe = document.getElementsByTagName("iframe");
 
 function toggleNav() {
   if(!menuOpen) {
     document.getElementById("mapka").style.left = "1em";
     mapBurger.innerHTML = "&times; "
     menuOpen = true
+
+    // Makeing sure map is in good position
+    
+    iframe.src = "https://www.openstreetmap.org/export/embed.html?bbox=21.016132235527042%2C52.21076239459632%2C21.02321326732636%2C52.213766696368644&amp;layer=mapnik";
   } else {
     document.getElementById("mapka").style.left = "-296px";
     mapBurger.innerHTML = "&#9776; Mapa"

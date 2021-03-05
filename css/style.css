@@ -55,8 +55,6 @@ body {
 	width: 100%;
 	top: 0;
 	z-index: -1;
-	
-	
 }
 #slide1-color {
 	background: url('../img/Plac_Unii/[ACC]\ PL\ UNII\ WIDOK\ NA\ POŁUDNIE\ HIGH\ RES\ BW.png') center center no-repeat;
@@ -81,7 +79,6 @@ body {
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
 	display: fixed;
-	
 }
 
 #slide2 {
