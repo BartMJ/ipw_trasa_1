@@ -23,9 +23,9 @@ let slides = document.getElementsByClassName("my-slides");
 window.addEventListener('scroll', function() {
   //document.getElementById('slide11').innerHTML = window.pageYOffset + 'px';
   console.log(window.pageYOffset)
-  if(window.pageYOffset > 9390) {
+  if(window.pageYOffset > 8521) {
     slides = document.getElementsByClassName("my-slides-s");
-  } else if (window.pageYOffset < 9390) {
+  } else if (window.pageYOffset < 8521) {
     slides = document.getElementsByClassName("my-slides");
   }
 });
