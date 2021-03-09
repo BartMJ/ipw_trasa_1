@@ -111,13 +111,13 @@ body {
 	min-height: 100vh;
 }
 #slide5 {
-	background: url('') center center no-repeat;
+	background: url('../img/Arkadia/[ACC]\ KONDUKTORSKA\ KOLOR.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
 }
 #slide6 {
-	background: url('../img/Konduktorska/[ACC]\ KONDUKTORSKA\ KOLOR.png') center center no-repeat;
+	background: url('../img/Konduktorska/KONDUKTORSKA\ KOLOR.jpg') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
@@ -138,7 +138,7 @@ body {
 
 }
 #slide9 {
-	background: url('') center center no-repeat;
+	background: url('../img/Królikarnia/[ACC]\ Królikarnia\ kolor.png') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
@@ -146,7 +146,7 @@ body {
 }
 
 #slide10 {
-	background: url('../img/Królikarnia/[ACC]\ Królikarnia\ kolor.png') center center no-repeat;
+	background: url('../img/skocznia/c\ proporcja.jpg') center center no-repeat;
 	background-size: cover;
     background-attachment: fixed; /* Ty moze byc ukryty blad z iPadem */
 	min-height: 100vh;
