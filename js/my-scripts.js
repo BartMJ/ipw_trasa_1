@@ -18,6 +18,18 @@ function toggleNav() {
   }
 
 }
+let slides = document.getElementsByClassName("my-slides");
+
+window.addEventListener('scroll', function() {
+  //document.getElementById('slide11').innerHTML = window.pageYOffset + 'px';
+  console.log(window.pageYOffset)
+  if(window.pageYOffset > 9390) {
+    slides = document.getElementsByClassName("my-slides-s");
+  } else if (window.pageYOffset < 9390) {
+    slides = document.getElementsByClassName("my-slides");
+  }
+});
+
 
 
 
@@ -31,17 +43,16 @@ document.addEventListener('keydown', (e) => {
   if(e.key === 'ArrowLeft') { toggleSlides(-1) } 
   if(e.key === 'ArrowRight') { toggleSlides(1) } 
 });
-
 // Function adds value -1 for previous and 1 for next slide to the initial value
 function toggleSlides(n) {
   showSlides(slideIndex += n);
 }
-
+// const slides = document.getElementsByClassName("my-slides");
 function showSlides(n) {
 
   console.log(n)
   let i;
-  const slides = document.getElementsByClassName("my-slides");
+  
   const dots = document.getElementsByClassName("dot");
   // Edge cases
   if (n > slides.length) {slideIndex = 1}
