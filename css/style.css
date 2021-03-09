@@ -152,27 +152,22 @@ body {
 	min-height: 100vh;
 
 }
-#slide11 {
-	background: url('../img/skocznia/c\ proporcja.jpg') center -100px no-repeat;
-	background-size: cover;
-    background-attachment: fixed;
-	min-height: 100vh;
-}
-#slide11b {
+
+#slide10b {
 	background: url('../img/skocznia/SKOCZNIA-B\ [ACC\ 1920].png') center -100px no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
 	display: none;
 }
-#slide11c {
+#slide10c {
 	background: url('../img/Skocznia/skocznia.png') center -100px no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
 	display: none;
 }
-#slide11d {
+#slide10d {
 	background: url('../img/Skocznia/SKOCZNIA\ [ACC\ 1920].png') center -100px no-repeat;
 	background-size: cover;
     background-attachment: fixed;
