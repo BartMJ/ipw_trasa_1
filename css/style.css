@@ -161,14 +161,14 @@ body {
 	display: none;
 }
 #slide10c {
-	background: url('../img/Skocznia/skocznia.png') center -100px no-repeat;
+	background: url('../img/skocznia/SKOCZNIA\ [ACC\ 1920].png') center -100px no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
 	display: none;
 }
 #slide10d {
-	background: url('../img/Skocznia/SKOCZNIA\ [ACC\ 1920].png') center -100px no-repeat;
+	background: url('../img/skocznia/skocznia.png') center -100px no-repeat;
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
