@@ -92,7 +92,7 @@ body {
 }
 
 #slide2b {
-	background: url('../img/Chocimska/CHOCIMSKA\ MLEKO\ KOLOR.png') center center no-repeat;
+	/* background: url('../img/Chocimska/CHOCIMSKA\ MLEKO\ KOLOR.png') center center no-repeat; */
 	background-size: cover;
     background-attachment: fixed;
 	min-height: 100vh;
